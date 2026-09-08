@@ -97,53 +97,7 @@ DIM_Product
 DIM_Territory
 DIM_Date
 FACT_Sales
-📈 Power BI Dashboard
 
-Connected to AdventureWorksDW2022 and includes:
-
-💰 Total Revenue KPI
-📈 Monthly Revenue Trend
-🏆 Top 10 Products by Revenue
-🌍 Sales by Territory
-📦 Order Quantity by Category
-🚀 How To Run
-Prerequisites
-SQL Server 2022+ Developer Edition
-Visual Studio 2022 with SSIS extension
-SSMS 22
-AdventureWorks2022.bak (restore from Microsoft samples)
-Power BI Desktop
-Steps
-
-1. Restore AdventureWorks database:
-
-sql
--- Restore AdventureWorks2022.bak in SSMS
-
-2. Create databases:
-
-sql
-CREATE DATABASE SalesStaging;
--- AdventureWorksDW2022 already restored
-
-3. Run SQL scripts (in order):
-
-SQL/01_create_staging_tables.sql
-SQL/02_create_dw_tables.sql
-SQL/03_populate_dim_date.sql
-
-4. Open SSIS solution:
-
-Open AdventureWorks_ETL.sln in Visual Studio 2022
-
-5. Run Master package:
-
-Right click 04_Master.dtsx → Execute Package
-
-6. Open Power BI:
-
-Open PowerBI/SalesDashboard.pbix
-Refresh data source → connect to MOHAMED-ASHRAF server
 📁 Project Structure
 enterprise-sales-etl-pipeline/
 ├── SSIS/
